@@ -1,23 +1,23 @@
 import app from './application'
-import { createConnection } from 'mysql'
-import * as dotenv from 'dotenv'
+import * as mysql from 'mysql'
+import { config } from './db/config'
 
-dotenv.config()
 
-const port = process.env.PORT || 8000
+console.log(config)
 
-const connection = createConnection({
-  host: process.env.DB_HOST,
-  port: 3306,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: 'birdietest'
-})
+const connection = mysql.createConnection(config)
 
 connection.connect((err) => {
-  if (err) throw err
-  console.log('Connected!')
-})
+  if (err) {
+    return console.error('error: ' + err.message);
+  }
+
+  console.log('Connected to the MySQL server.');
+});
+
+
+
+const port = process.env.PORT || 8000
 
 app.listen(port, () => {
   // tslint:disable-next-line:no-console
