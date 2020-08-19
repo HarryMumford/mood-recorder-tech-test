@@ -1,11 +1,8 @@
 import app from './application'
-import * as mysql from 'mysql'
+import { createConnection } from 'mysql';
 import { config } from './db/config'
 
-
-console.log(config)
-
-const connection = mysql.createConnection(config)
+const connection = createConnection(config)
 
 connection.connect((err) => {
   if (err) {
@@ -14,8 +11,6 @@ connection.connect((err) => {
 
   console.log('Connected to the MySQL server.');
 });
-
-
 
 const port = process.env.PORT || 8000
 
