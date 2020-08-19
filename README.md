@@ -1,6 +1,54 @@
-# Birdie Developer Test
+# Care tracker
 
-We would like to thank you for taking our developer test. We understand that often candidates will have many of these tests to complete. Therefore we think it's important to cut straight to the important stuff. With that in mind, we've gone ahead and created a boilerplate that mostly represents the kind of technical stack we work with. This saves you from having to create needless boilerplate code that does little to demonstrate your potential as a developer.
+[Description](#description) | [Live Website](#live-website) | [Technologies Used](#technologies-used) | [Challenges and Goals](#challenges-and-goals) | [Getting Started](#getting-started) | [How to Run the App](#how-to-run-the-app) | [How to Run the tests](#how-to-run-the-tests) | [Continuous Integration and Delivery](#continuous-integration-and-delivery) | [Next Tasks](#next-tasks)
+
+## Description
+
+
+
+## Live Website
+
+
+
+## Technologies Used
+
+
+## Challenges and Goals
+
+
+## Getting Started
+
+In terminal and desired file location:
+```
+git clone git@github.com:HarryMumford/Kernowave-next-js.git
+cd care-tracker
+npm i
+```
+To add credentials for db connection
+
+1. Open .env file
+2. Add values to appropriate keys
+
+## How to Run the app
+
+- To start dev mode `npm run dev`
+- To build `npm run build`
+- To start in prod `npm run start`
+
+## How to Run the tests
+
+- Watch all tests `npm run test`
+  
+## Continuous Integration and Delivery
+
+
+## Next Tasks
+
+
+
+***
+
+# Challenge
 
 ## Context
 
@@ -107,11 +155,4 @@ Here's the technical stack this boilerplate was made with:
 
 ---
 
-## Planning
 
-_Todo_
-
-- [ ] Connect db
-- [ ] Use concurrently to run both front and back end together
-- [ ] Research graphical display options
-- [ ] Research about common Typescript differences and how this affects testing
