@@ -3,12 +3,8 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { RootState } from '@App/store/reducers';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
-
-import Title from '../style/Title';
-import Logo from '../style/Logo';
-import SubTitle from '../style/SubTitle';
-
-const LogoUrl = require('../../assets/images/logo-birdie.svg');
+import Header from '../Header/Container';
+import Section from '../Section/Container';
 
 interface AppProps {}
 
@@ -17,7 +13,7 @@ interface AppState {}
 const GlobalStyle = createGlobalStyle`
   body {
     height: 100vh;
-    background-color: #F9F9F9;
+    margin: 0;
     > div {
       height: 100%;
     }
@@ -27,10 +23,6 @@ const GlobalStyle = createGlobalStyle`
 const AppContainer = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 `;
 
 class App extends React.Component<AppProps, AppState> {
@@ -43,9 +35,8 @@ class App extends React.Component<AppProps, AppState> {
       <>
         <GlobalStyle />
         <AppContainer>
-          <Logo src={LogoUrl} />
-          <Title>Welcome to the birdie test</Title>
-          <SubTitle>Best of luck!</SubTitle>
+          <Header />
+          <Section />
         </AppContainer>
       </>
     );
