@@ -1,10 +1,8 @@
-import express from "express";
-import { pingController } from "./routers/ping";
-import { moodEventRouter } from './routers/moodEvent'
+import express from 'express';
+import moodEventRoutes from './routes/moodEvent';
 
 const app = express();
 
-app.use(pingController);
-app.use("/", moodEventRouter);
+app.use('/', moodEventRoutes);
 
 export default app;
