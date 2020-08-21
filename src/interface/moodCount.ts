@@ -1,3 +1,3 @@
 export interface moodCount {
-  [key: string]: String;
+  [key: string]: number;
 }

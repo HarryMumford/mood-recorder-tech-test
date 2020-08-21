@@ -1,10 +1,10 @@
 import { moodCount } from '../interface/moodCount';
 
-export function moodCount(moodEvents: Array<Array<Object>>): moodCount {
+export function moodCount(moodEvents: any): moodCount {
   const rows = moodEvents[0];
-  let output: any = {};
+  let output: moodCount = {};
 
-  rows.forEach((row) => {
+  rows.forEach((row: object) => {
     const obj: any = Object.assign({}, row);
     const mood = obj.payload.mood;
     if (output[mood] == undefined) {
