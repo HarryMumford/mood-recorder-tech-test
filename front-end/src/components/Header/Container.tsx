@@ -3,15 +3,21 @@ import Title from './Title';
 import * as React from 'react';
 import styled from 'styled-components';
 
+const logoUrl = require('../../assets/images/logo-birdie.svg');
+
 const Header = () => {
   const HeaderContainer = styled.div`
-    width: 100%;
-    height: 100%;
+    background-color: white;
+    color: midnightblue;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   `;
   return (
     <HeaderContainer>
-      <Logo />
-      <Title />
+      <Logo src={logoUrl} />
+      <Title>Care Tracker</Title>
     </HeaderContainer>
   );
 };

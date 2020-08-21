@@ -4,9 +4,12 @@ import Table from '../Table/Container';
 import * as React from 'react';
 import styled from 'styled-components';
 
+const blob = require('../../assets/images/blob.svg');
+
 const Section = () => {
   const SectionContainer = styled.div`
-    background-color: lightblue;
+    background-image: url(${blob});
+    height: 80%;
   `;
   return (
     <SectionContainer>
