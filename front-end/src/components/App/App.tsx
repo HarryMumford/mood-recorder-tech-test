@@ -1,14 +1,9 @@
 import * as React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import { RootState } from '@App/store/reducers';
-import { connect } from 'react-redux';
-import { Dispatch } from 'redux';
 import Header from '../Header/Container';
 import Section from '../Section/Container';
-
-interface AppProps {}
-
-interface AppState {}
+import { Provider } from 'react-redux';
+import store from '../../flux/store';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -25,26 +20,16 @@ const AppContainer = styled.div`
   height: 100%;
 `;
 
-class App extends React.Component<AppProps, AppState> {
-  public constructor(props: AppProps) {
-    super(props);
-  }
+const App = () => {
+  return (
+    <Provider store={store}>
+      <GlobalStyle />
+      <AppContainer>
+        <Header />
+        <Section />
+      </AppContainer>
+    </Provider>
+  );
+};
 
-  public render() {
-    return (
-      <>
-        <GlobalStyle />
-        <AppContainer>
-          <Header />
-          <Section />
-        </AppContainer>
-      </>
-    );
-  }
-}
-
-const mapStateToProps = (state: RootState, ownProps: object) => {};
-
-const mapDispatchToProps = (dispatch: Dispatch<RootState>) => {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
