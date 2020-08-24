@@ -8,7 +8,10 @@
     "react-dom": "^16.8.6",
     "react-minimal-pie-chart": "^8.0.1",
     "react-scripts-redux-ts": "1.2.1",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "@types/react-redux": "^7.1.9",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "PORT=4000 react-scripts-ts start",
@@ -29,10 +32,10 @@
     "@types/node": "^12.0.1",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
-    "@types/react-redux": "^7.0.9",
     "@types/redux-thunk": "^2.1.0",
     "@types/styled-components": "^4.1.15",
-    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
     "typescript": "^3.4.5"
-  }
+  },
+  "proxy": "http://localhost:8000/"
 }

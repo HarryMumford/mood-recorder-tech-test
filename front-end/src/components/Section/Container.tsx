@@ -1,4 +1,4 @@
-import Chart from '../Chart/Container';
+import Chart from '../Chart/Chart';
 import Table from '../Table/Container';
 
 import * as React from 'react';
