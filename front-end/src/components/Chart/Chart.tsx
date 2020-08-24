@@ -1,5 +1,6 @@
 // import { PieChart } from 'react-minimal-pie-chart';
 import * as React from 'react';
+<<<<<<< HEAD
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 
@@ -25,6 +26,18 @@ const Chart = () => {
       </button>
     </ChartContainer>
   );
+=======
+import { useEffect } from 'react';
+import { getMoodCount } from '../../flux/actions/moods';
+// import * as store from '../../flux/store';
+
+const Chart = () => {
+  useEffect(() => {
+    getMoodCount();
+  });
+
+  return <div>Chart</div>;
+>>>>>>> 4bf43245435f4a94d1d572dc2080059714299048
 };
 
 export default Chart;
