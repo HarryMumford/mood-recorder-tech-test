@@ -9,12 +9,9 @@ import { KeyProps } from './interface';
 import Subtitle from './Subtitle';
 
 const KeyContainer = styled.div`
-  background-color: white;
   font-family: sans-serif;
   font-size: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
   color: darkslategray;
 `;
 
