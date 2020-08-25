@@ -4,7 +4,9 @@ import Key from './Key';
 import Pie from './Pie';
 
 const ChartContainer = styled.div`
-  width: 300px;
+  align-content: center;
+  margin: 0 auto;
+  width: 250px;
 `;
 
 const Chart = () => {

@@ -10,6 +10,9 @@ const Section = () => {
   const SectionContainer = styled.div`
     background-image: url(${blob});
     height: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
   `;
 
   return (
