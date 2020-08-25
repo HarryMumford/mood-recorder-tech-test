@@ -13,5 +13,17 @@ export function moodCount(moodEvents: any): moodCount {
     output[mood]++;
   });
 
+  const moods = Object.keys(output);
+
+  let total = 0;
+
+  moods.forEach((mood) => {
+    total += output[mood];
+  });
+
+  moods.forEach((mood) => {
+    output[mood] = Math.round(100 * (output[mood] / total));
+  });
+
   return output;
 }

@@ -1,4 +1,4 @@
-import Chart from '../Chart/Chart';
+import Chart from '../Chart/Container';
 import Table from '../Table/Container';
 
 import * as React from 'react';
@@ -11,6 +11,7 @@ const Section = () => {
     background-image: url(${blob});
     height: 80%;
   `;
+
   return (
     <SectionContainer>
       <Chart />
