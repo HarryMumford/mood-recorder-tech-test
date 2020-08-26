@@ -16,7 +16,7 @@ I decided that a family member of someone in a care home would most likely want 
 
 ## Live Website
 
-![](./front-end/src/assets/images/webpage.png)
+![](./front-end/src/assets/images/website.PNG)
 
 ## Tests
 
