@@ -12,11 +12,8 @@
     "clean": "rimraf lib && rimraf coverage",
     "format": "prettier --write \"{src,__tests__}/**/*.ts\" --single-quote --trailing-comma es5",
     "lint": "tslint --force --format verbose \"src/**/*.ts\"",
-    "test": "jest --watch",
-    "dev": "nodemon",
-    "build-front-end": "cd front-end && npm run build",
-    "install-front-end": "cd front-end && npm i",
-    "heroku-postbuild": "npm run install-front-end && npm run build-front-end"
+    "test": "jest --watch --verbose",
+    "dev": "nodemon"
   },
   "dependencies": {
     "@types/cors": "^2.8.7",
@@ -49,6 +46,9 @@
     "node": ">=10.0.0"
   },
   "jest": {
+    "testPathIgnorePatterns": [
+      "front-end"
+    ],
     "preset": "ts-jest"
   }
 }
