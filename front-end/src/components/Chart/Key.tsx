@@ -9,7 +9,6 @@ import { KeyProps } from './interface';
 import Subtitle from './Subtitle';
 
 const KeyContainer = styled.div`
-  font-family: sans-serif;
   font-size: 1rem;
   margin-top: 30px;
   color: darkslategray;
@@ -33,10 +32,9 @@ const Key = () => {
   return (
     <KeyContainer>
       <Subtitle>Mood Checks</Subtitle>
-      {moodState.mood ? (
+      {moodState.mood &&
         moods.map((mood) => {
           const color = moodColors[mood];
-          console.log(color);
           const percent = `${moodState.mood[mood]}%`;
           const sentence = ` ${percent} of the time`;
           const moodCapitalized = mood.charAt(0).toUpperCase() + mood.slice(1);
@@ -46,10 +44,7 @@ const Key = () => {
               {sentence}
             </div>
           );
-        })
-      ) : (
-        <div>Loading...</div>
-      )}
+        })}
     </KeyContainer>
   );
 };

@@ -10,6 +10,7 @@ const ChartContainer = styled.div`
   padding: 20px;
   margin: 0 auto;
   width: 250px;
+  font-family: sans-serif;
 `;
 
 const Chart = () => {
