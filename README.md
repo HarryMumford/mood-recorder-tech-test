@@ -1,6 +1,6 @@
 # Care tracker
 
-[Description](#description) | [Live Website](#live-website) | [Technologies Used](#technologies-used) | [Challenges and Goals](#challenges-and-goals) | [Getting Started](#getting-started) | [How to Run the App](#how-to-run-the-app) | [How to Run the tests](#how-to-run-the-tests) | [Continuous Integration and Delivery](#continuous-integration-and-delivery) | [Next Tasks](#next-tasks)
+[Description](#description) | [Justification](#justification) | [Live Website](#live-website) | [Tests](#tests) | [Technologies Used](#technologies-used) | [Challenges and Goals](#challenges-and-goals) | [Getting Started](#getting-started) | [How to Run the App](#how-to-run-the-app) | [How to Run the tests](#how-to-run-the-tests) | [Continuous Integration and Delivery](#continuous-integration-and-delivery) | [Next Tasks](#next-tasks)
 
 ## Description
 
@@ -30,11 +30,13 @@ I used Jest to unit test the back end services.
 
 **_UI Tests_**
 I used enzyme and jest snapshots to test ui components.
+
 ![](./front-end/src/assets/images/ui.PNG)
 
 
 **_API Tests_**
 Using supertest and jest I tested the endpoints. Normally I would use a testing database but considering I am only fetching data I used the database given.
+
 ![](./front-end/src/assets/images/api.PNG)
 
 
@@ -74,13 +76,19 @@ cd front-end npm i
 
 ## How to Run the app
 
+**_Backend_**
+
 - To start dev mode `npm run dev`
+
+**_Front-end_**
+
+- To start dev mode `npm start`
 - To build `npm run build`
-- To start in prod `npm run start`
+
 
 ## How to Run the tests
 
-- Watch all tests `npm run test`
+- Watch all tests `npm t` (seperate for front-end and backend)
 
 ## Next Tasks
 
