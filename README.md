@@ -18,6 +18,7 @@ I did not list any additional detail in the concern incidents apart from their s
 ## Live Website
 
 ![](./front-end/src/assets/images/website.PNG)
+![](./front-end/src/assets/images/zoom.PNG)
 
 ## Tests
 
