@@ -13,7 +13,7 @@ I decided that a family member of someone in a care home would most likely want 
 1. A general overview of the moods of the care recipient
 2. A list of any incidents that may be of concern.
 
-I did not list any additional detail in the concern incidents apart from their severity. This was because the notes were not detailed enough or absent. Instead I included the name of the care giver incase the family member wants to contact them. (This care giver was given a random name)
+I did not list any additional detail in the concern incidents apart from their severity. This was because the notes were not detailed enough or absent. Instead I included the name of the care giver incase the family member wants to contact them (This care giver was given a random name). I kept the interface as simplistic as possible to accomodate for all audiences.
 
 ## Live Website
 
@@ -26,13 +26,17 @@ I have demonstrated examples of api end point testing using supertest, UI testin
 **_Unit Tests_**
 I used Jest to unit test the back end services.
 
+![](./front-end/src/assets/images/unit.PNG)
+
 **_UI Tests_**
 I used enzyme and jest snapshots to test ui components.
+![](./front-end/src/assets/images/ui.PNG)
+
 
 **_API Tests_**
 Using supertest and jest I tested the endpoints. Normally I would use a testing database but considering I am only fetching data I used the database given.
+![](./front-end/src/assets/images/api.PNG)
 
-## Technologies Used
 
 ## Challenges and Goals
 
@@ -40,6 +44,8 @@ For me this tech-test was also a learning exercise as I was previously unfamilia
 
 - [x] Using the official documentation I have gained a firm understanding of how to use interfaces and types to satisfy static checks.
 - [x] Using the WorkBench GUI I have improved my sql querying skills.
+
+## Technologies Used
 
 ### Front end
 
@@ -76,9 +82,10 @@ cd front-end npm i
 
 - Watch all tests `npm run test`
 
-## Continuous Integration and Delivery
-
 ## Next Tasks
+
+- [ ] Ability to change care recipient
+- [ ] Add a medicine tracker
 
 ---
 
