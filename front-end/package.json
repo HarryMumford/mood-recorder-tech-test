@@ -3,20 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react-redux": "^7.1.9",
     "axios": "^0.20.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-minimal-pie-chart": "^8.0.1",
-    "react-scripts-redux-ts": "1.2.1",
-    "styled-components": "^4.2.0",
-    "@types/react-redux": "^7.1.9",
     "react-redux": "^7.2.0",
-    "redux": "^4.0.5"
+    "react-scripts-redux-ts": "1.2.1",
+    "redux": "^4.0.5",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "PORT=4000 react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
+    "test": "jest --watch",
     "eject": "react-scripts-ts eject",
     "create:component": "./node_modules/hygen/lib/bin.js component create",
     "create:store:item": "./node_modules/hygen/lib/bin.js store create"
@@ -28,13 +28,20 @@
     }
   },
   "devDependencies": {
-    "@types/jest": "^24.0.13",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.10",
     "@types/node": "^12.0.1",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
     "@types/redux-thunk": "^2.1.0",
     "@types/styled-components": "^5.1.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "enzyme-to-json": "^3.5.0",
+    "jest": "^26.4.2",
     "redux-devtools-extension": "^2.13.8",
+    "ts-jest": "^26.3.0",
     "typescript": "^3.4.5"
   },
   "proxy": "http://localhost:8000/"

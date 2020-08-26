@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventDate should render correctly with given timestamp 1`] = `
+<styled.td>
+  undefined NaNth undefined NaN
+</styled.td>
+`;
+
+exports[`Table container should render banner text correctly with given strings 1`] = `
+<styled.td>
+  undefined NaNth undefined NaN
+</styled.td>
+`;
+
+exports[`Table container should render correctly with given timestamp 1`] = `
+<styled.td>
+  undefined NaNth undefined NaN
+</styled.td>
+`;
+
+exports[`Table container should render the container correctly 1`] = `
+<styled.div>
+  <Rows />
+</styled.div>
+`;
