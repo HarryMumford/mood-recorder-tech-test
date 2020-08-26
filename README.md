@@ -11,8 +11,9 @@ A care tracker that displays the percentage of care recipient's moods in a simpl
 I decided that a family member of someone in a care home would most likely want to see:
 
 1. A general overview of the moods of the care recipient
-2. A list of any incidents that may be of concern
-   I did not list any additional detail in the concern incidents apart from their severity. This was because the notes were not detailed enough or absent. Instead I included the name of the care giver incase the family member wants to contact them. (This care giver was given a random name)
+2. A list of any incidents that may be of concern.
+
+I did not list any additional detail in the concern incidents apart from their severity. This was because the notes were not detailed enough or absent. Instead I included the name of the care giver incase the family member wants to contact them. (This care giver was given a random name)
 
 ## Live Website
 
