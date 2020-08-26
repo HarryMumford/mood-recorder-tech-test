@@ -3,3 +3,9 @@ export const moodColors = {
   okay: 'darkslateblue',
   sad: 'darkslategray'
 };
+
+export const severityColors = {
+  HIGH: 'tomato',
+  MEDIUM: 'goldenrod',
+  LOW: 'green'
+};

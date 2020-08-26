@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMoods } from '../../flux/actions/moods';
 import { RootStore } from '../../flux/store';
-import { moodColors } from '../../assets/constants/moodColors';
+import { moodColors } from '../../assets/constants/colors';
 import { KeyProps } from './interface';
 import Subtitle from './Subtitle';
 

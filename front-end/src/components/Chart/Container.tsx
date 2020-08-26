@@ -8,7 +8,7 @@ const ChartContainer = styled.div`
   background-color: azure;
   border-radius: 10px;
   padding: 20px;
-  margin: 0 auto;
+  margin: 0 20px 0 auto;
   width: 250px;
   font-family: sans-serif;
 `;

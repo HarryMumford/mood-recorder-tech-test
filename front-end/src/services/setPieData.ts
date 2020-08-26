@@ -1,4 +1,4 @@
-import { moodColors } from '../assets/constants/moodColors';
+import { moodColors } from '../assets/constants/colors';
 import { DefaultStateI } from '../flux/reducers/mood';
 
 export const setPieData = (moodState: DefaultStateI) => {
