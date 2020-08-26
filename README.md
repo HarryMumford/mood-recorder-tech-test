@@ -4,30 +4,66 @@
 
 ## Description
 
+A care tracker that displays the percentage of care recipient's moods in a simple pie chart and also lists any events that are to be of concern.
 
+### Justification
+
+I decided that a family member of someone in a care home would most likely want to see:
+
+1. A general overview of the moods of the care recipient
+2. A list of any incidents that may be of concern
+   I did not list any additional detail in the concern incidents apart from their severity. This was because the notes were not detailed enough or absent. Instead I included the name of the care giver incase the family member wants to contact them. (This care giver was given a random name)
 
 ## Live Website
 
+![](./front-end/src/assets/images/webpage.png)
 
+## Tests
+
+I have demonstrated examples of api end point testing using supertest, UI testing with enzyme and snapshots and isolated unit testing with jest.
+
+**_Unit Tests_**
+I used Jest to unit test the back end services.
+
+**_UI Tests_**
+I used enzyme and jest snapshots to test ui components.
+
+**_API Tests_**
+Using supertest and jest I tested the endpoints. Normally I would use a testing database but considering I am only fetching data I used the database given.
 
 ## Technologies Used
 
-
 ## Challenges and Goals
 
+For me this tech-test was also a learning exercise as I was previously unfamiliar with Typescript and MySQL.
+
+- [x] Using the official documentation I have gained a firm understanding of how to use interfaces and types to satisfy static checks.
+- [x] Using the WorkBench GUI I have improved my sql querying skills.
+
+### Front end
+
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/introduction/getting-started)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Redux-thunk](https://www.npmjs.com/package/redux-thunk)
+- [Styled components](https://www.styled-components.com/)
+
+### Back end
+
+- [Express](https://expressjs.com/)
+- [MySQL](https://www.mysql.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## Getting Started
 
 In terminal and desired file location:
+
 ```
-git clone git@github.com:HarryMumford/Kernowave-next-js.git
+git clone git@github.com:HarryMumford/mood-recorder-tech-test.git
 cd care-tracker
 npm i
+cd front-end npm i
 ```
-To add credentials for db connection
-
-1. Open .env file
-2. Add values to appropriate keys
 
 ## How to Run the app
 
@@ -38,15 +74,12 @@ To add credentials for db connection
 ## How to Run the tests
 
 - Watch all tests `npm run test`
-  
-## Continuous Integration and Delivery
 
+## Continuous Integration and Delivery
 
 ## Next Tasks
 
-
-
-***
+---
 
 # Challenge
 
@@ -154,5 +187,3 @@ Here's the technical stack this boilerplate was made with:
    ```
 
 ---
-
-
