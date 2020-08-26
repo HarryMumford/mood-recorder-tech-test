@@ -13,7 +13,7 @@ I decided that a family member of someone in a care home would most likely want 
 1. A general overview of the moods of the care recipient
 2. A list of any incidents that may be of concern.
 
-I did not list any additional detail in the concern incidents apart from their severity. This was because the notes were not detailed enough or absent. Instead I included the name of the care giver incase the family member wants to contact them (This care giver was given a random name). I kept the interface as simplistic as possible to accomodate for all audiences.
+I did not list any additional detail in the concern incidents apart from their severity. This was because the notes were not detailed enough or absent. Instead I included the name of the care giver incase the family member wants to contact them (This care giver was given a random name). I kept the interface as simplistic as possible to accomodate for all audiences. Although the project is currently hardcoded for 1 recpient, I have ensured the pie chart adapts to the other 2 recipients listed in the database.
 
 ## Live Website
 
