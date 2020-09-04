@@ -8,7 +8,7 @@ A care tracker that displays the percentage of care recipient's moods in a simpl
 
 ### Justification
 
-I decided that a family member of someone in a care home would most likely want to see:
+I decided that a family member of someone in a care would most likely want to see:
 
 1. A general overview of the moods of the care recipient
 2. A list of any incidents that may be of concern.
